@@ -5,7 +5,7 @@ export const data = {
   data: {
     BestLuxury: {
       name:"Beauty Luxury",
-      href:"/central-beuaty-award/BestSkincare/BestLuxury",
+      href:"/BestSkincare/BestLuxury",
       first: {
         id: 1,
         name: "CLE DE PEAU BEAUTE LA CRÈME",

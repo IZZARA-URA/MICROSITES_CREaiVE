@@ -3,7 +3,7 @@ import React, { useEffect, useState, FC } from 'react'
 import { useRouter } from 'next/navigation'
 
 import { data } from "../data"
-import ButtonClick from '@/app/central-beuaty-award/utils'
+import ButtonClick from '@/app/utils'
 import useSound from 'use-sound';
 
 

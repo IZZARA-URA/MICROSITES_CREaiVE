@@ -4,7 +4,7 @@ import { data } from "./data";
 import { useRouter } from "next/navigation";
 
 import Link from "next/link";
-import ButtonClick from '@/app/central-beuaty-award/utils'
+import ButtonClick from '@/app/utils'
 import useSound from 'use-sound'
 
 type Props = {

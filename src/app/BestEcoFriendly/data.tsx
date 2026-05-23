@@ -5,7 +5,7 @@ export const data = {
   data: {
     BestEcoFriendly: {
       name:"Eco Friendly",
-      href:"/central-beuaty-award/BestSkincare/BestEcoFriendly",
+      href:"/BestSkincare/BestEcoFriendly",
       first: {
         id: 1,
         name: "CLE DE PEAU BEAUTE LA CRÈME",

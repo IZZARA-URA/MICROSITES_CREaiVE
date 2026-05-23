@@ -5,7 +5,7 @@ export const data = {
   data: {
     BestCushion: {
       name:"Cushion",
-      href:"/central-beuaty-award/BestMakeUp/BestCushion",
+      href:"/BestMakeUp/BestCushion",
       first: {
         id: 1,
         name: "ESTEE LAUDER DOUBLE WEAR SOFT GLOW MATTE MAKEUP SPF 45/PA+++",
@@ -44,7 +44,7 @@ export const data = {
     },
     BestEverydayLipstick: {
       name:"Every Day Lipstick",
-      href:"/central-beuaty-award/BestMakeUp/BestEverydayLipstick",
+      href:"/BestMakeUp/BestEverydayLipstick",
       first: {
         id: 1,
         name: "CHANEL ROUGE ALLURE VELVET",
@@ -83,7 +83,7 @@ export const data = {
     },
     BestFoundation: {
       name:"Foundation",
-      href:"/central-beuaty-award/BestMakeUp/BestFoundation",
+      href:"/BestMakeUp/BestFoundation",
       first: {
         id: 1,
         name: "NARS LIGHT REFLECTING FOUNDATION",
@@ -122,7 +122,7 @@ export const data = {
     },
     BestLipMoisturizer: {
       name:"Lip Moisturizer",
-      href:"/central-beuaty-award/BestMakeUp/BestLipMoisturizer",
+      href:"/BestMakeUp/BestLipMoisturizer",
       first: {
         id: 1,
         name: "DIOR ADDICT LIP GLOW",
@@ -161,7 +161,7 @@ export const data = {
     },
     BestMakeupBase: {
       name:"Makeup Base",
-      href:"/central-beuaty-award/BestMakeUp/BestMakeupBase",
+      href:"/BestMakeUp/BestMakeupBase",
       first: {
         id: 1,
         name: "BOBBI BROWN VITAMIN ENRICHED FACE BASE",
@@ -200,7 +200,7 @@ export const data = {
     },
     BestPowder: {
       name:"Powder",
-      href:"/central-beuaty-award/BestMakeUp/BestPowder",
+      href:"/BestMakeUp/BestPowder",
       first: {
         id: 1,
         name: "GUERLAIN MET 24 PEARL/PDR 2 ROSE",

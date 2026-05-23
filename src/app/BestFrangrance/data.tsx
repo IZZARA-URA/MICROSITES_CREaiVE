@@ -5,7 +5,7 @@ export const data = {
   data: {
     BestFragranceEveryday: {
       name:"Fragrance Everyday",
-      href:"/central-beuaty-award/BestFrangrance/BestFragranceEveryday",
+      href:"/BestFrangrance/BestFragranceEveryday",
       first: {
         id: 1,
         name: "DIOR MISS DIOR BLOOMING BOUQUET",
@@ -44,7 +44,7 @@ export const data = {
     },
     BestFragranceSporty: {
       name:"Fragrance Sporty",
-      href:"/central-beuaty-award/BestFrangrance/BestFragranceSporty",
+      href:"/BestFrangrance/BestFragranceSporty",
       first: {
         id: 1,
         name: "CHANEL BLEU DE CHANEL EAU DE PARFUM SPRAY",
@@ -83,7 +83,7 @@ export const data = {
     },
     BestFragranceSpecialOccasion: {
       name:"Fragrance Special Occasion",
-      href:"/central-beuaty-award/BestFrangrance/BestFragranceSpecialOccasion",
+      href:"/BestFrangrance/BestFragranceSpecialOccasion",
       first: {
         id: 1,
         name: "NARCISO RODRIGUEZ ALL OF ME EDP",

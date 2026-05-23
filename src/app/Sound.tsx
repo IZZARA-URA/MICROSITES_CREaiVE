@@ -1,49 +1,53 @@
 "use client"
-import React, { useEffect, useState, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 type Props = {
     muted: boolean;
 }
 
-
 const Sound = ({ muted }: Props) => {
 
-    const [muteds, setMuted] = useState(muted)
-
-    const audio = useRef<HTMLAudioElement | undefined>(
-        typeof Audio !== "undefined" ? new Audio("/mp3/award.mp3") : undefined
-      );
+    const audioRef = useRef<HTMLAudioElement | null>(null)
 
     useEffect(() => {
+        if (typeof Audio === "undefined") return
 
-        if (muteds) {
-            audio.current?.play();
-        } else {
-            audio.current?.pause();
+        if (!audioRef.current) {
+            const a = new Audio("/mp3/award.mp3")
+            a.loop = true
+            audioRef.current = a
         }
 
-        console.log(muted)
+        const audio = audioRef.current
 
-    }, [muteds])
-    
+        // prop semantics kept from original: muted=true -> play, muted=false -> pause
+        if (!muted) {
+            audio.pause()
+            return
+        }
 
-    return (
-        <div>
-            {
-                muted ? (
-                    <div>   
-                        {/* <div className='test-[50px]'>
-                            test
-                        </div> */}
-                    </div>
-                ) : (
-                    <div>
-                        {/* <audio src="/mp3/award.mp3" loop autoPlay/> */}
-                    </div>
-                )
-            }
-        </div>
-    )
+        const start = () => {
+            audio.play().catch(() => {})
+            window.removeEventListener("pointerdown", start)
+            window.removeEventListener("keydown", start)
+            window.removeEventListener("touchstart", start)
+        }
+
+        // Try to autoplay; if the browser blocks it, start on the first user interaction.
+        audio.play().catch(() => {
+            window.addEventListener("pointerdown", start)
+            window.addEventListener("keydown", start)
+            window.addEventListener("touchstart", start)
+        })
+
+        return () => {
+            window.removeEventListener("pointerdown", start)
+            window.removeEventListener("keydown", start)
+            window.removeEventListener("touchstart", start)
+        }
+    }, [muted])
+
+    return null
 }
 
 export default Sound

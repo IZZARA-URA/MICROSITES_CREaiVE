@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import useSound from 'use-sound';
-import ButtonClick from '@/app/central-beuaty-award/utils'
+import ButtonClick from '@/app/utils'
 // import { useAppSelector, useAppDispatch, useAppStore } from '../../lib/hook'
 import Link from "next/link";
 // <!-- COLORS -->
@@ -50,7 +50,8 @@ const CentralBeuatyAward = () => {
 
   return (
     <div
-      // id="my-component" 
+      className="w-full h-full"
+      // id="my-component"
       onContextMenu={(e) => {
         e.preventDefault()
       }}
@@ -72,7 +73,7 @@ const CentralBeuatyAward = () => {
             <div className="relative z-50 w-screen h-screen m-auto items-center justify-center top-[20%] ">
               <Link
 
-                href="/central-beuaty-award/GenerateYourBauetyGiftCard"
+                href="/GenerateYourBauetyGiftCard"
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[40vh] m-auto "
                 onClick={() => play()}
               >
@@ -84,7 +85,7 @@ const CentralBeuatyAward = () => {
 
               {/* Top Center */}
               <Link
-                href="/central-beuaty-award/BestFrangrance"
+                href="/BestFrangrance"
                 onClick={() => play()}
               >
                 <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[58vh] m-auto">
@@ -96,7 +97,7 @@ const CentralBeuatyAward = () => {
               </Link>
 
               <Link
-                href="/central-beuaty-award/BestLuxury"
+                href="/BestLuxury"
                 onClick={() => play()}
               >
                 <button className="absolute top-1/2 left-[2%] -translate-y-[44vh] m-auto">
@@ -108,7 +109,7 @@ const CentralBeuatyAward = () => {
               </Link>
 
               <Link
-                href="/central-beuaty-award/BestMakeUp"
+                href="/BestMakeUp"
                 onClick={() => play()}
               >
                 <button className="absolute top-1/2 right-[2%] -translate-y-[44vh] m-auto">
@@ -120,7 +121,7 @@ const CentralBeuatyAward = () => {
               </Link>
 
               <Link
-                href="/central-beuaty-award/BestSkincare"
+                href="/BestSkincare"
                 onClick={() => play()}
               >
                 <button className="absolute top-1/2 left-[8%] -translate-y-[22vh] m-auto">
@@ -132,7 +133,7 @@ const CentralBeuatyAward = () => {
               </Link>
 
               <Link
-                href="/central-beuaty-award/BestEcoFriendly"
+                href="/BestEcoFriendly"
                 onClick={() => play()}
               >
                 <button className="absolute top-1/2 right-[8%] -translate-y-[22vh] m-auto">
@@ -151,18 +152,18 @@ const CentralBeuatyAward = () => {
           </div>
         </div>
       ) : (
-        <div className="relative w-screen h-screen overflow-hidden bg-black transition-all duration-75" onClick={CliclHandler}>
+        <div className="relative w-full h-full overflow-hidden bg-black transition-all duration-75" onClick={CliclHandler}>
           <div className="absolute z-20 w-full h-full opacity-60">
-            <video loop muted autoPlay preload="none" className="w-screen h-screen object-cover">
+            <video loop muted autoPlay preload="none" className="w-full h-full object-cover">
               <source
                 src="/mp4/CentralBeautyAward2024/award.mp4"
                 type="video/mp4"
               />
             </video>
           </div>
-          <div className="absolute z-30 w-full text-gray text-center top-[50%] hv:text-end hv:top-[20%] opacity-loop-animate">
+          <div className="absolute z-30 w-full text-gray text-center top-[50vh] hv:text-end hv:top-[20vh] opacity-loop-animate">
             <button onClick={CliclHandler}>
-              <div className="animate-bounce flex text-[40px] justify-center items-center w-[200px] h-[200px] border-4 rounded-[100%] font-light font-serif text-gray-200 border-gray-200 m-auto bg-black bg-opacity-50 uppercase hv:mr-10">
+              <div className="animate-bounce duration-500 flex text-[0.8vw] justify-center items-center w-[4vw] h-[4vw] border-2 rounded-[100%] font-light font-serif text-gray-200 border-gray-200 m-auto bg-black bg-opacity-50 uppercase hv:mr-10">
                 Touch
               </div>
             </button>

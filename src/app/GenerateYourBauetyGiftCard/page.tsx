@@ -5,7 +5,7 @@ import { useRef, useState, useCallback } from "react"; // import useState
 import { FaCamera } from "react-icons/fa";
 import { useQRCode } from 'next-qrcode';
 import useSound from 'use-sound';
-import ButtonClick from "@/app/central-beuaty-award/utils"
+import ButtonClick from "@/app/utils"
 import { MdOutlineArrowBack } from "react-icons/md";
 import { MdHome } from "react-icons/md";
 import { useRouter } from "next/navigation";
@@ -49,7 +49,7 @@ const page = () => {
     setKeepUrls(result.images_faceSwap);
     // console.log(result.images_faceSwap);
 
-    setNewImage("https://centralawards.creaive.ai/central-beuaty-award/GenerateYourBauetyGiftCard/" + result.images_faceSwap.replace("https://thairath.promptdue.com/images/replicate/", "").replace(".png", ""))
+    setNewImage("https://centralawards.creaive.ai/GenerateYourBauetyGiftCard/" + result.images_faceSwap.replace("https://thairath.promptdue.com/images/replicate/", "").replace(".png", ""))
     // setButtonHidden(!buttonHidden)
   };
 
@@ -96,7 +96,7 @@ const page = () => {
           <div className=" grid grid-cols-1 p-4 gap-4  bg-[#F6E7DF] pt-8">
             <img
               src={`${keepUrls}`}
-              // central-beuaty-award/GenerateYourBauetyGiftCard/
+              // GenerateYourBauetyGiftCard/
               // src="/img/CentralBeautyAward2024/AW 01 No Logo.png"
               className="w-[400px] hv:w-[1200px] rounded-[40px] m-auto "
             />

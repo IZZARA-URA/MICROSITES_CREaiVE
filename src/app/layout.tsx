@@ -3,17 +3,19 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import type { Viewport } from 'next'
 
+import Sound from "./Sound";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MICROSITES",
+  title: "MICROSITES | CENTRAL BEUATY AWARDS 2024 | Powered by Creaive.ai",
   description: "Microsites Power by Creaive.ai",
   // viewport: "viewport",
   // content: "width=device-width, user-scalable=no",
 };
 
 // export type ViewportLayout = {
-//   width?: string | number;
+//   width?: string | number;ห
 //   height?: string | number;
 //   initialScale?: 1;
 //   minimumScale?: 1;
@@ -50,10 +52,16 @@ export default function RootLayout({
         />
       </head>
 
-      <body
-        className={inter.className}
-      >
-        {children}
+      <body className={`${inter.className} bg-white`}>
+        <Sound muted={true} />
+        <div className="w-screen h-screen flex items-center justify-center overflow-hidden bg-white">
+          <div
+            className="relative overflow-hidden shrink-0 flex items-center justify-center max-h-screen max-w-screen py-4"
+            style={{ aspectRatio: "1440 / 2560", height: 2560, maxHeight: "100vh", maxWidth: "100vw" }}
+          >
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );

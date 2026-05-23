@@ -5,7 +5,7 @@ export const data = {
         category: [
             {
                 name: "Essence",
-                href: "/central-beuaty-award/BestSkincare/BestEssence",
+                href: "/BestSkincare/BestEssence",
                 order: [
                     {
                         id: 1,
@@ -49,7 +49,7 @@ export const data = {
             },
             {
                 name: "BestEssence",
-                href: "/central-beuaty-award/BestSkincare/BestEssence",
+                href: "/BestSkincare/BestEssence",
                 order: [
                     {
                         id: 1,
@@ -93,7 +93,7 @@ export const data = {
             },
             {
                 name: "BestEssence",
-                href: "/central-beuaty-award/BestSkincare/BestEssence",
+                href: "/BestSkincare/BestEssence",
                 order: [
                     {
                         id: 1,
@@ -137,7 +137,7 @@ export const data = {
             },
             {
                 name: "BestEssence",
-                href: "/central-beuaty-award/BestSkincare/BestEssence",
+                href: "/BestSkincare/BestEssence",
                 order: [
                     {
                         id: 1,
@@ -181,7 +181,7 @@ export const data = {
             },
             {
                 name: "BestEssence",
-                href: "/central-beuaty-award/BestSkincare/BestEssence",
+                href: "/BestSkincare/BestEssence",
                 order: [
                     {
                         id: 1,

@@ -5,7 +5,7 @@ export const data = {
   data: {
     BestEssence: {
       name: "Essence",
-      href: "/central-beuaty-award/BestSkincare/BestEssence",
+      href: "/BestSkincare/BestEssence",
       first: {
         id: 1,
         name: "DIOR PRESTIGE LA MICRO-LOTION DE ROSE ADVANCED",
@@ -59,7 +59,7 @@ export const data = {
     },
     BestEyeCream: {
       name: "Eye Cream",
-      href: "/central-beuaty-award/BestSkincare/BestEyeCream",
+      href: "/BestSkincare/BestEyeCream",
       first: {
         id: 1,
         name: "ESTEE LAUDER ADVANCED NIGHT REPAIR EYE SUPERCHARGED GEL-CREME",
@@ -113,7 +113,7 @@ export const data = {
     },
     BestMenSkincare: {
       name: "Men's Skincare",
-      href: "/central-beuaty-award/BestSkincare/BestMenSkincare",
+      href: "/BestSkincare/BestMenSkincare",
       first: {
         id: 1,
         name: "SHISEIDO MEN Ultimune Power Infusing Concentrate",
@@ -167,7 +167,7 @@ export const data = {
     },
     BestMoisturizer: {
       name: "Moisturizer",
-      href: "/central-beuaty-award/BestSkincare/BestMoisturizer",
+      href: "/BestSkincare/BestMoisturizer",
       first: {
         id: 1,
         name: "SHISEIDO VITAL PERFECTION Uplifting and Firming Advanced Cream",
@@ -218,7 +218,7 @@ export const data = {
     },
     BestSerum: {
       name: "Serum",
-      href: "/central-beuaty-award/BestSkincare/BestSerum",
+      href: "/BestSkincare/BestSerum",
       first: {
         id: 1,
         name: "LA MER THE CONCENTRATE",
@@ -269,7 +269,7 @@ export const data = {
     },
     BestSunscreen: {
       name: "sunscreen",
-      href: "/central-beuaty-award/BestSkincare/BestSunscreen",
+      href: "/BestSkincare/BestSunscreen",
       first: {
         id: 1,
         name: "CLARINS UV PLUS [3P] ANTI-POLLUTION SPF50 PA++++",

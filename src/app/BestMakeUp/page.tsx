@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import useSound from 'use-sound'
 
 import Link from "next/link";
-import ButtonClick from '@/app/central-beuaty-award/utils'
+import ButtonClick from '@/app/utils'
 
 
 type Props = {
